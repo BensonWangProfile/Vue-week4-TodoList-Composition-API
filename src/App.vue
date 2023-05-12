@@ -1,5 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { onMounted } from 'vue'
+import router from '@/router'
+
+onMounted(() => {
+  router.push({ path: '/account' })
+})
 </script>
 
 <template>

@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <div class="wrapper_logo">logo</div>
     <div class="wrapper_account">
       <RouterView />
     </div>
@@ -11,7 +10,7 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 </style>

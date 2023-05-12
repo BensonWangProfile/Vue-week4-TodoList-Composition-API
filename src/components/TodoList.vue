@@ -3,7 +3,7 @@
     <TodoStatus />
     <ul class="todolist_list">
       <li v-for="(item, key) in todoListFilter" :key="key" class="todolist_item">
-        <p @click="todoBeDone(item.id)">v</p>
+        <n-checkbox @click="todoBeDone(item.id)"></n-checkbox>
         <p :class="{ done: item.completed_at }">
           {{ item.content }}
         </p>
@@ -20,6 +20,7 @@ import { useTodoStore } from '../stores/todo'
 import { storeToRefs } from 'pinia'
 // import { apiPatchTodoDone, apiDeleteTodos } from '@/apis/todos.js'
 import apis from '@/apis/todos.js'
+import { NCheckbox } from 'naive-ui'
 
 const { apiGetTodos, apiPatchTodoDone, apiDeleteTodos } = apis
 
