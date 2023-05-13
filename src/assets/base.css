@@ -125,7 +125,7 @@ table {
 input {
   border: none;
   border-radius: 6px;
-  background-color: #f7f4f4;
+  /* background-color: #f7f4f4; */
   padding: 10px 15px;
   font-size: 16px;
   outline: none;
@@ -135,4 +135,9 @@ button {
   padding: 10px 15px;
   border-radius: 6px;
   cursor: pointer;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

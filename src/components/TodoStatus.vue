@@ -35,8 +35,8 @@ const setStatus = (str) => {
   width: 100%;
 }
 .status_active {
-  outline: 1px solid wheat;
   border-radius: 10px;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 .status_btn {
   width: 100%;

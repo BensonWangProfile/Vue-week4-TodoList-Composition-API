@@ -120,6 +120,7 @@ onMounted(async () => {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .done {
   text-decoration: line-through;
