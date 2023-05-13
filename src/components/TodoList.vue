@@ -39,11 +39,9 @@ const getTodos = async () => {
   try {
     const res = await apiGetTodos(token)
     todoList.value = res.data.todos
-    console.log('getTodos:', res)
-    console.log('todoList:', todoList.value)
     countUndos()
   } catch (error) {
-    console.log('getTodos', error)
+    // console.log('getTodos', error)
   }
 }
 
@@ -78,7 +76,7 @@ const todoBeDone = async (id) => {
     console.log(res)
     getTodos()
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 }
 
@@ -88,7 +86,7 @@ const todoBeDelete = async (id) => {
     console.log(res)
     getTodos()
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 }
 

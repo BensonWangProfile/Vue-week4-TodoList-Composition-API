@@ -12,7 +12,7 @@
           rules="required|email"
           :class="{ error: errors.email }"
       /></label>
-      <ErrorMessage name="email" />
+      <ErrorMessage name="email" class="error-message" />
       <label for="password" class="form_input"
         ><span> 密碼 </span>
         <VField
@@ -25,7 +25,7 @@
           :class="{ error: errors.password }"
         />
       </label>
-      <ErrorMessage name="password" />
+      <ErrorMessage name="password" class="error-message" />
       <button type="button" :disabled="!meta.valid" @click.prevent="Login" @keydown.enter="Login">
         登入
       </button>

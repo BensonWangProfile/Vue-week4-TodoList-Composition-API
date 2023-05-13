@@ -12,7 +12,7 @@
           rules="required|email"
           :class="{ error: errors.email }"
       /></label>
-      <ErrorMessage name="email" />
+      <ErrorMessage name="email" class="error-message" />
       <label for="userName" class="form_input"
         ><span> userName </span>
         <VField
@@ -24,7 +24,7 @@
           rules="required"
           :class="{ error: errors.userName }"
       /></label>
-      <ErrorMessage name="userName" />
+      <ErrorMessage name="userName" class="error-message" />
       <label for="enrollPassword" class="form_input"
         ><span> 密碼 </span>
         <VField
@@ -36,7 +36,7 @@
           :class="{ error: errors.password }"
         />
       </label>
-      <ErrorMessage name="password" />
+      <ErrorMessage name="password" class="error-message" />
       <label for="confirmPassword" class="form_input"
         ><span> 確認密碼 </span>
         <VField
@@ -49,7 +49,7 @@
           :class="{ error: errors.confirmPassword }"
         />
       </label>
-      <ErrorMessage name="confirmPassword" />
+      <ErrorMessage name="confirmPassword" class="error-message" />
       <button type="submit" :disabled="!meta.valid" @click.prevent="enroll">註冊</button>
       <button type="button" @click="toLogin">登入頁面</button>
     </VForm>

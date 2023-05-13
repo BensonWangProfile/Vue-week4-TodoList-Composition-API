@@ -10,3 +10,7 @@
 body {
   background-color: #ccc;
 }
+
+.error-message {
+  color: #d44950;
+}
