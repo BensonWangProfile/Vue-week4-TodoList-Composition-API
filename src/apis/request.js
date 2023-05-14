@@ -10,7 +10,7 @@ request.interceptors.response.use(
   },
   (error) => {
     if (error.response.status === 401) {
-      console.log('Not Found')
+      console.log(error.response.data.message)
     }
     return Promise.reject(error)
   }

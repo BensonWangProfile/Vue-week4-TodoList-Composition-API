@@ -76,9 +76,7 @@ const enroll = async () => {
       nickname: enrollData.userName,
       password: enrollData.password
     }
-    console.log(user)
-    const res = await apiPostEnroll({ user })
-    console.log(res)
+    await apiPostEnroll({ user })
     router.push({ path: '/account' })
   } catch (error) {
     console.log(error)

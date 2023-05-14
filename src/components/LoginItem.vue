@@ -53,7 +53,6 @@ const Login = async () => {
     const res = await apiPostLogin({ user })
     await localStorage.setItem('token', res.headers.authorization)
     await localStorage.setItem('nickname', res.data.nickname)
-    console.log('api suc')
     toTodos()
   } catch (error) {
     console.log(error)

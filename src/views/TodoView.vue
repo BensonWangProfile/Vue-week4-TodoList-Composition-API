@@ -1,4 +1,7 @@
 <template>
+  <div class="header">
+    <LogoutItem />
+  </div>
   <div class="todolist">
     <h1>待辦事項</h1>
     <TodoInput />
@@ -6,11 +9,19 @@
   </div>
 </template>
 <script setup>
+import LogoutItem from '../components/LogoutItem.vue'
 import TodoInput from '../components/TodoInput.vue'
 import TodoList from '../components/TodoList.vue'
 </script>
 
 <style>
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
 .todolist {
   max-width: 480px;
   width: 100%;

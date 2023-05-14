@@ -25,8 +25,6 @@ const getTodos = async () => {
   try {
     const res = await apiGetTodos(token)
     todoList.value = res.data.todos
-    console.log('getTodos:', res)
-    console.log('todoList:', todoList.value)
   } catch (error) {
     console.log('getTodos', error)
   }
