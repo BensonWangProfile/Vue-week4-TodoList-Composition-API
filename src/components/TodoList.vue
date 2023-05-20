@@ -3,7 +3,7 @@
     <TodoStatus />
     <ul class="todolist_list">
       <li v-for="(item, key) in todoListFilter" :key="key" class="todolist_item">
-        <n-checkbox @click="todoBeDone(item.id)"></n-checkbox>
+        <n-checkbox :checked="item.completed_at !== null" @click="todoBeDone(item.id)"></n-checkbox>
         <p :class="{ done: item.completed_at }">
           {{ item.content }}
         </p>
